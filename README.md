@@ -4,6 +4,13 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
+#### 20201029(목)
+- 네이밍규칙: 카멜표기(낙타등)
+- 사각형 영역 크기: box-sizing:border-box;
+- 웹접근성: 시각장애인들을 위한 코딩추가.
+- 스크린리더 프로그램용 코딩: 예, text-indent: -9999px;
+- 햄버거메뉴: .openMOgnb -> gnb(global navigation) 글로벌 네비게이션(전체 메뉴)
+Ps. Page Navigation (페이징 링크 처리)
 #### 20201028(수)
 - z-index: 주), 0부터 시작 , 화면에는 레이어라는 개념으로 처리(포토피아)
 - CSS스타일 적용하는 3가지 방법
@@ -22,7 +29,6 @@
 - https://drive.google.com/file/d/1dC2RMqDqNeEFtr-r-dvcsKk0YwPjk0Xy/view?usp=sharing
 
 #### 20201022(목)
-
 - 소스내용 교육용으로 정리
 - 깃 사용시 토큰인증헤제: [윈도우 자격증명관리]에 personal access token 을 삭제 후 커밋
 - 강사블로그 http://blog.daum.net/web_design 에서 익스텐션으로 검색 vscode 사용법 참조.
