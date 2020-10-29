@@ -83,7 +83,7 @@ header {
 	float: none;
 	width: 100%;
 	background: #31353d;
-	display: block;
+	display: none;
 }
 .closePop {
 	display: block;
@@ -147,11 +147,29 @@ header {
 .gnb li + li + li + li a {
 	background-image: url(./img/ico_gnb04.png);
 }
+.gnb li:nth-child(2n+1) {
+	border-right: 1px solid #83868b;
+}
 /* //상단메뉴영역 */
 
 /* //헤더영역 */
 /* //모바일영역 */
 </style>
+<script>
+/* 함수의 기본작동원리
+function aname(vars) { //함수선언
+	alert(vars + " 이름출력");
+}
+aname('김일국');//함수호출
+*/
+$(document).ready(function(){
+ //alert('콜백함수 실행');
+ $(".openMOgnb").click(function(){
+
+ });
+ 
+});
+</script>
 </head>
 <body>
 
