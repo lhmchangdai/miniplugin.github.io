@@ -5,6 +5,8 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201029(목)
+- nav태그: html5 추가된 태그.
+- <div id="nav"></div> -> <nav></nav>
 - ul(unorder list)태그 > li(list)태그
 - 네이밍규칙: 카멜표기(낙타등)
 - 사각형 영역 크기: box-sizing:border-box;
