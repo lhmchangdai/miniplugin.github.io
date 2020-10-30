@@ -86,18 +86,26 @@ ul.viewImgList li {
 	height: 550px;
 	line-height: 550px;
 	background-size: cover;
-	position: relative;
-	z-index: 50;
 	width: 100%;
 }
 .roll_content a img {display: none;}
 li.imglist0 {
+	position: relative;
+	z-index: 50;
 	background: url(../img/maple.jpg) no-repeat;
 }
 li.imglist1 {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
 	background: url(../img/img_slidecontents02.png) no-repeat;
 }
 li.imglist2 {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top:0;
 	background: url(../img/img_slidecontents03.png) no-repeat;
 }
 .roll_content {position: relative;}
