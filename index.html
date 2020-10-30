@@ -26,6 +26,38 @@
 	position: initial;
 }
 /* //컨테이너영역 */
+/* 슬라이드영역 */
+.main_rolling_mobile {display: none;}
+.main_rolling_pc {display: block;}
+.visualRoll {
+	position: relative;
+	width: 100%;
+}
+.viewImgList {
+	position: relative;
+	width: 100%;
+}
+ul.viewImgList li {
+	text-align: center;
+	height: 550px;
+	line-height: 550px;
+	background-size: cover;
+	position: relative;
+	z-index: 50;
+	width: 100%;
+}
+.roll_content a img {display: none;}
+li.imglist0 {
+	background: url(./img/maple.jpg) no-repeat;
+}
+li.imglist1 {
+	background: url(./img/img_slidecontents02.png) no-repeat;
+}
+li.imglist2 {
+	background: url(./img/img_slidecontents03.png) no-repeat;
+}
+/* //슬라이드영역 */
+
 /* //태블릿영역 */
 }
 </style>
@@ -108,7 +140,7 @@ $(document).ready(function() {
                     <li class="imglist0">
                         <div class="roll_content">
                             <a href="javascript:;">
-                            <img src="img/img_slidecontents01.png" alt="OOOO OOOOO OOOO OOOOO, 스프링... OOOO OOOOO?"></a>
+                            <img src="img/maple.jpg" alt="OOOO OOOOO OOOO OOOOO, 스프링... OOOO OOOOO?"></a>
                             <p class="roll_txtline">OOOO OOOOOOOOO OOOOOOOOO OOOOO</p>
                         </div>
                     </li>

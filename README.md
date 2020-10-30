@@ -5,6 +5,7 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201030(금)
+- background-size: cover 속성은 영역보다 이미지가 작을때 작동.
 - inherit : 상속(extends)
 - @media all => screen + print + ...
 - 대괄호[배열], 중괄호{구현내용}, 소괄호(매개변수)
