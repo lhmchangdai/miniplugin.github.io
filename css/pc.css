@@ -119,6 +119,9 @@
         background: url(./img/ico_totop.png) no-repeat center;
         background-size: 50%;
     }
+    .to_contact {
+        padding-bottom: 0px !important;
+    }
     /* //퀵메뉴영역 */
     /* //PC영역 */
     }
