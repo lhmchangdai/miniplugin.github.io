@@ -1,6 +1,6 @@
 //PC용 메뉴 보이기/숨기기 함수 선언(아래)
-var isOver1 = false;
-var isOver2 = false;
+var isOver1 = false;//플래그(깃발) 변수값이 false일때만 fadeOut이 작동됨
+var isOver2 = false;//플래그(깃발)변수값이 false 일때만 fadeOut이 작동됨
 function goHide1() {
 	if(!isOver1 && !isOver2) {
 		//자바스크립트는 뒤에서부터 앞으로 해석합니다
@@ -58,35 +58,46 @@ $(document).ready(function(){
 	//PC용 메뉴 롤오버(마우스) 호출부분(아래)
 	//1대메뉴1-gnb_depth2_1 서브메뉴 마우스 오버액션
 	$('.openAll1').mouseover(function(){
-
+		//pc용에서만 액션이 가능하도록 가로크기 비교(아래)
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_1').fadeIn('fast');
+		}
+		isOver1 = true;
 	});
 	//2대메뉴1-gnb_depth2_1 서브메뉴 선택액션
 	$('.openAll1').focus(function(){
-
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_1').fadeIn('fast');
+		}
+		isOver1 = true;
 	});
 	//3대메뉴1-gnb_depth2_1 서브메뉴 마우스 아웃액션
 	$('.openAll1').mouseout(function(){
-
+		isOver1 = false;
+		setTimeout("goHide1()",200);//0.2초 후에 goHide1함수실행
 	});
 	//4첫번째 서브메뉴 마우스 오버했을때 액션
 	$('.gnb_depth2_1').mouseover(function(){
-
+		isOver2 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
 	});
 	//5첫번째 서브메뉴 선택액션 focus <=> blur
 	$('.gnb_depth2_1').focus(function(){
-
+		isOver2 = true;
 	});
 	//6첫번째 서브메뉴 마우스 아웃액션
 	$('.gnb_depth2_1').mouseout(function(){
-
+		isOver2 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide1()", 200);
 	});
 	//7첫번째 서브메뉴 선택을 벗어났을때 액션
 	$('.gnb_depth2_1').blur(function(){
-
+		isOver2 = false;
+		setTimeout("goHide1()", 200);
 	});
 	//8첫번째 서브메뉴중 마지막 li태그(해외)를 벗어났을때액션
 	$('.gnb_depth2_1 li:last-child a').blur(function(){
-
+		isOver1 = false;
+		setTimeout("goHide1()", 200);
 	});
 
 	
