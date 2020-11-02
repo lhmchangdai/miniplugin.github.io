@@ -100,5 +100,137 @@ $(document).ready(function(){
 		setTimeout("goHide1()", 200);
 	});
 
+	//1대메뉴2-gnb_depth2_2 서브메뉴 마우스 오버액션
+	$('.openAll2').mouseover(function(){
+		//pc용에서만 액션이 가능하도록 가로크기 비교(아래)
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_2').fadeIn('fast');
+		}
+		isOver11 = true;
+	});
+	//2대메뉴2-gnb_depth2_2 서브메뉴 선택액션
+	$('.openAll2').focus(function(){
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_2').fadeIn('fast');
+		}
+		isOver11 = true;
+	});
+	//3대메뉴2-gnb_depth2_2 서브메뉴 마우스 아웃액션
+	$('.openAll2').mouseout(function(){
+		isOver11 = false;
+		setTimeout("goHide2()",200);//0.2초 후에 goHide1함수실행
+	});
+	//4첫번째 서브메뉴 마우스 오버했을때 액션
+	$('.gnb_depth2_2').mouseover(function(){
+		isOver22 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
+	});
+	//5첫번째 서브메뉴 선택액션 focus <=> blur
+	$('.gnb_depth2_2').focus(function(){
+		isOver22 = true;
+	});
+	//6첫번째 서브메뉴 마우스 아웃액션
+	$('.gnb_depth2_2').mouseout(function(){
+		isOver22 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide2()", 200);
+	});
+	//7첫번째 서브메뉴 선택을 벗어났을때 액션
+	$('.gnb_depth2_2').blur(function(){
+		isOver22 = false;
+		setTimeout("goHide2()", 200);
+	});
+	//8첫번째 서브메뉴중 마지막 li태그(해외)를 벗어났을때액션
+	$('.gnb_depth2_2 li:last-child a').blur(function(){
+		isOver11 = false;
+		setTimeout("goHide2()", 200);
+	});
+
+	//1대메뉴3-gnb_depth2_3 서브메뉴 마우스 오버액션
+	$('.openAll3').mouseover(function(){
+		//pc용에서만 액션이 가능하도록 가로크기 비교(아래)
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_3').fadeIn('fast');
+		}
+		isOver111 = true;
+	});
+	//2대메뉴3-gnb_depth2_3 서브메뉴 선택액션
+	$('.openAll3').focus(function(){
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_3').fadeIn('fast');
+		}
+		isOver111 = true;
+	});
+	//3대메뉴3-gnb_depth2_3 서브메뉴 마우스 아웃액션
+	$('.openAll1').mouseout(function(){
+		isOver1 = false;
+		setTimeout("goHide1()",200);//0.2초 후에 goHide1함수실행
+	});
+	//4첫번째 서브메뉴 마우스 오버했을때 액션
+	$('.gnb_depth2_1').mouseover(function(){
+		isOver2 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
+	});
+	//5첫번째 서브메뉴 선택액션 focus <=> blur
+	$('.gnb_depth2_1').focus(function(){
+		isOver2 = true;
+	});
+	//6첫번째 서브메뉴 마우스 아웃액션
+	$('.gnb_depth2_1').mouseout(function(){
+		isOver2 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide1()", 200);
+	});
+	//7첫번째 서브메뉴 선택을 벗어났을때 액션
+	$('.gnb_depth2_1').blur(function(){
+		isOver2 = false;
+		setTimeout("goHide1()", 200);
+	});
+	//8첫번째 서브메뉴중 마지막 li태그(해외)를 벗어났을때액션
+	$('.gnb_depth2_1 li:last-child a').blur(function(){
+		isOver1 = false;
+		setTimeout("goHide1()", 200);
+	});
+
+	//1대메뉴1-gnb_depth2_1 서브메뉴 마우스 오버액션
+	$('.openAll1').mouseover(function(){
+		//pc용에서만 액션이 가능하도록 가로크기 비교(아래)
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_1').fadeIn('fast');
+		}
+		isOver1 = true;
+	});
+	//2대메뉴1-gnb_depth2_1 서브메뉴 선택액션
+	$('.openAll1').focus(function(){
+		if(parseInt($('header').css('width')) > 1055) {
+			$('.gnb_depth2_1').fadeIn('fast');
+		}
+		isOver1 = true;
+	});
+	//3대메뉴1-gnb_depth2_1 서브메뉴 마우스 아웃액션
+	$('.openAll1').mouseout(function(){
+		isOver1 = false;
+		setTimeout("goHide1()",200);//0.2초 후에 goHide1함수실행
+	});
+	//4첫번째 서브메뉴 마우스 오버했을때 액션
+	$('.gnb_depth2_1').mouseover(function(){
+		isOver2 = true;//fadeOut 작동을 하지 않겠다는 명시적인 변수값.
+	});
+	//5첫번째 서브메뉴 선택액션 focus <=> blur
+	$('.gnb_depth2_1').focus(function(){
+		isOver2 = true;
+	});
+	//6첫번째 서브메뉴 마우스 아웃액션
+	$('.gnb_depth2_1').mouseout(function(){
+		isOver2 = false;//faseOut 을 작동하겠다는 명시적인 변수값.
+		setTimeout("goHide1()", 200);
+	});
+	//7첫번째 서브메뉴 선택을 벗어났을때 액션
+	$('.gnb_depth2_1').blur(function(){
+		isOver2 = false;
+		setTimeout("goHide1()", 200);
+	});
+	//8첫번째 서브메뉴중 마지막 li태그(해외)를 벗어났을때액션
+	$('.gnb_depth2_1 li:last-child a').blur(function(){
+		isOver1 = false;
+		setTimeout("goHide1()", 200);
+	});
+
 	
 });
